@@ -1,0 +1,126 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="679dp"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="656dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/docName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="508dp"
+        android:ems="10"
+        android:hint="Patient Name"
+        android:inputType="text"
+        android:minHeight="52dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="423dp"
+        android:ems="10"
+        android:hint="Patient Age"
+        android:inputType="text"
+        android:minHeight="52dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="343dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="343dp"
+        android:ems="10"
+        android:hint="Patient Weight"
+        android:inputType="text"
+        android:minHeight="52dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="423dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="262dp"
+        android:ems="10"
+        android:hint="Patient Height"
+        android:inputType="text"
+        android:minHeight="52dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/docBtn"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="158dp"
+        android:text="Emergency" />
+
+    <Button
+        android:id="@+id/nonemg"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="158dp"
+        android:text="Non-Emergency" />
+
+
+</RelativeLayout>
